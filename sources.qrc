@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/math/state/questao_3.png</file>
+        <file>img/math/ans_a/resposta_A_3.png</file>
+        <file>img/math/ans_b/resposta_B_3.png</file>
+        <file>img/math/ans_c/resposta_C_3.png</file>
+        <file>img/math/ans_d/resposta_D_3.png</file>
+        <file>img/math/ans_e/resposta_E_3.png</file>
+    </qresource>
+    <qresource prefix="/log">
+        <file>log/debug.log</file>
+    </qresource>
+</RCC>

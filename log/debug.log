@@ -1,0 +1,14 @@
+---------------- LOG ----------------
+*************************************
+
+VERSION: 0.0.1
+
+AUTHOR: VICTOR
+
+INSTANCE TIME: 04/01/19 - 00:51
+
+*************************************
+-------------------------------------
+
+[DEBUG   ]: [ 04/01/19 | 00:51 ] | ACTION: Initiaziling main window..                                   | IN FILE:../QuestoesDB/mainwin.cpp
+[DEBUG   ]: [ 04/01/19 | 00:51 ] | ACTION: Closing application..                                        | IN FILE:../QuestoesDB/mainwin.cpp

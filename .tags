@@ -1,0 +1,101 @@
+MATEMATICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE MATEMATICA ($/;"	table	line:6
+MATEMATICA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE MATEMATICA ($/;"	field	line:6
+MATEMATICA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:7
+MATEMATICA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:8
+MATEMATICA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:9
+MATEMATICA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:10
+MATEMATICA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:11
+MATEMATICA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:12
+MATEMATICA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:13
+FISICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE FISICA ($/;"	table	line:25
+FISICA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE FISICA ($/;"	field	line:25
+FISICA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:26
+FISICA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:27
+FISICA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:28
+FISICA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:29
+FISICA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:30
+FISICA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:31
+FISICA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:32
+QUIMICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE QUIMICA ($/;"	table	line:50
+QUIMICA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE QUIMICA ($/;"	field	line:50
+QUIMICA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:51
+QUIMICA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:52
+QUIMICA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:53
+QUIMICA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:54
+QUIMICA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:55
+QUIMICA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:56
+QUIMICA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:57
+BIOLOGIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE BIOLOGIA ($/;"	table	line:61
+BIOLOGIA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE BIOLOGIA ($/;"	field	line:61
+BIOLOGIA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:62
+BIOLOGIA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:63
+BIOLOGIA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:64
+BIOLOGIA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:65
+BIOLOGIA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:66
+BIOLOGIA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:67
+BIOLOGIA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:68
+HISTORIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE HISTORIA ($/;"	table	line:72
+HISTORIA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE HISTORIA ($/;"	field	line:72
+HISTORIA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:73
+HISTORIA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:74
+HISTORIA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:75
+HISTORIA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:76
+HISTORIA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:77
+HISTORIA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:78
+HISTORIA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:79
+GEOGRAFIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE GEOGRAFIA ($/;"	table	line:83
+GEOGRAFIA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE GEOGRAFIA ($/;"	field	line:83
+GEOGRAFIA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:84
+GEOGRAFIA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:85
+GEOGRAFIA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:86
+GEOGRAFIA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:87
+GEOGRAFIA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:88
+GEOGRAFIA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:89
+GEOGRAFIA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:90
+FILOSOFIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE FILOSOFIA ($/;"	table	line:94
+FILOSOFIA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE FILOSOFIA ($/;"	field	line:94
+FILOSOFIA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:95
+FILOSOFIA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:96
+FILOSOFIA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:97
+FILOSOFIA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:98
+FILOSOFIA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:99
+FILOSOFIA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:100
+FILOSOFIA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:101
+SOCIOLOGIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE SOCIOLOGIA ($/;"	table	line:105
+SOCIOLOGIA.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE SOCIOLOGIA ($/;"	field	line:105
+SOCIOLOGIA.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:106
+SOCIOLOGIA.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:107
+SOCIOLOGIA.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:108
+SOCIOLOGIA.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:109
+SOCIOLOGIA.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:110
+SOCIOLOGIA.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:111
+SOCIOLOGIA.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:112
+PORTUGUES	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE PORTUGUES ($/;"	table	line:116
+PORTUGUES.IDQUESTAO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE PORTUGUES ($/;"	field	line:116
+PORTUGUES.ENUNCIADO	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDQUESTAO INTEGER PRIMARY KEY,$/;"	field	line:117
+PORTUGUES.ALTERNATIVA_A	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ENUNCIADO TEXT NOT NULL,$/;"	field	line:118
+PORTUGUES.ALTERNATIVA_B	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_A TEXT NOT NULL,$/;"	field	line:119
+PORTUGUES.ALTERNATIVA_C	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_B TEXT NOT NULL,$/;"	field	line:120
+PORTUGUES.ALTERNATIVA_D	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_C TEXT NOT NULL,$/;"	field	line:121
+PORTUGUES.ALTERNATIVA_E	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_D TEXT NOT NULL,$/;"	field	line:122
+PORTUGUES.RESPOSTA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    ALTERNATIVA_E TEXT NOT NULL,$/;"	field	line:123
+CONTADOR	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE CONTADOR ($/;"	table	line:128
+CONTADOR.IDCONTADOR	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TABLE CONTADOR ($/;"	field	line:128
+CONTADOR.CONTADOR_MATEMATICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    IDCONTADOR INTEGER PRIMARY KEY,$/;"	field	line:129
+CONTADOR.CONTADOR_FISICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_MATEMATICA INT,$/;"	field	line:130
+CONTADOR.CONTADOR_QUIMICA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_FISICA INT,$/;"	field	line:131
+CONTADOR.CONTADOR_BIOLOGIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_QUIMICA INT,$/;"	field	line:132
+CONTADOR.CONTADOR_HISTORIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_BIOLOGIA INT,$/;"	field	line:133
+CONTADOR.CONTADOR_GEOGRAFIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_HISTORIA INT,$/;"	field	line:134
+CONTADOR.CONTADOR_FILOSOFIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_GEOGRAFIA INT,$/;"	field	line:135
+CONTADOR.CONTADOR_SOCIOLOGIA	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_FILOSOFIA INT,$/;"	field	line:136
+CONTADOR.CONTADOR_PORTUGUES	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^    CONTADOR_SOCIOLOGIA INT,$/;"	field	line:137
+MATEMATICA.UPT_MAT_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_MAT_COUNT AFTER INSERT ON MATEMATICA$/;"	trigger	line:145
+FISICA.UPT_FIS_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_FIS_COUNT AFTER INSERT ON FISICA$/;"	trigger	line:153
+QUIMICA.UPT_QUIM_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_QUIM_COUNT AFTER INSERT ON QUIMICA$/;"	trigger	line:161
+BIOLOGIA.UPT_BIO_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_BIO_COUNT AFTER INSERT ON BIOLOGIA$/;"	trigger	line:169
+HISTORIA.UPT_HIST_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_HIST_COUNT AFTER INSERT ON HISTORIA$/;"	trigger	line:177
+GEOGRAFIA.UPT_GEO_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_GEO_COUNT AFTER INSERT ON GEOGRAFIA$/;"	trigger	line:185
+FILOSOFIA.UPT_FILO_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_FILO_COUNT AFTER INSERT ON FILOSOFIA$/;"	trigger	line:193
+SOCIOLOGIA.UPT_SOCIO_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_SOCIO_COUNT AFTER INSERT ON SOCIOLOGIA$/;"	trigger	line:201
+PORTUGUES.UPT_PORT_COUNT	/home/victor/Documentos/Programas C++/QuestoesDB/database/questoesdb.sql	/^CREATE TRIGGER UPT_PORT_COUNT AFTER INSERT ON PORTUGUES$/;"	trigger	line:209
