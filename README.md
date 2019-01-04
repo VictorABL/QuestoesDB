@@ -1,7 +1,7 @@
 # QuestoesDB
 QT UI connecting with SQLite database.
 
-This program it is intended to provide a database with question samples from the national exam of high school of Brazil,
+<body align = "justify" >This program it is intended to provide a database with question samples from the national exam of high school of Brazil,
 in portuguese ENEM (Exame Nacional do Ensino Médio).
 It has a portuguese interface, though the entire code is written in english.
 
@@ -10,3 +10,4 @@ prepare for the exam.
 
 Its doesn`t have any monetary goals, and everyone its allowed to download its source code, to maintain or to help with 
 improvements.
+</body>
