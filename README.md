@@ -1,7 +1,7 @@
 # QuestoesDB
-QT UI connecting with SQLite database.
+<body align = "justify" >QT UI connecting with SQLite database.
 
-<body align = "justify" >This program it is intended to provide a database with question samples from the national exam of high school of Brazil,
+This program it is intended to provide a database with question samples from the national exam of high school of Brazil,
 in portuguese ENEM (Exame Nacional do Ensino Médio).
 It has a portuguese interface, though the entire code is written in english.
 
