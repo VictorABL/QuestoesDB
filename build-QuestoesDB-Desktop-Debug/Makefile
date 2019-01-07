@@ -57,7 +57,8 @@ SOURCES       = ../QuestoesDB/main.cpp \
 		../QuestoesDB/maker_win.cpp \
 		../QuestoesDB/question_maker.cpp \
 		../QuestoesDB/database_impl.cpp \
-		../QuestoesDB/query_parser.cpp qrc_sources.cpp \
+		../QuestoesDB/query_parser.cpp \
+		../QuestoesDB/statistic.cpp qrc_sources.cpp \
 		moc_mainwin.cpp \
 		moc_maker_win.cpp
 OBJECTS       = main.o \
@@ -68,6 +69,7 @@ OBJECTS       = main.o \
 		question_maker.o \
 		database_impl.o \
 		query_parser.o \
+		statistic.o \
 		qrc_sources.o \
 		moc_mainwin.o \
 		moc_maker_win.o
@@ -151,14 +153,16 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../QuestoesDB/maker_win.h \
 		../QuestoesDB/question_maker.h \
 		../QuestoesDB/database_impl.h \
-		../QuestoesDB/query_parser.h ../QuestoesDB/main.cpp \
+		../QuestoesDB/query_parser.h \
+		../QuestoesDB/statistic.h ../QuestoesDB/main.cpp \
 		../QuestoesDB/mainwin.cpp \
 		../QuestoesDB/question_selector.cpp \
 		../QuestoesDB/custom_logger.cpp \
 		../QuestoesDB/maker_win.cpp \
 		../QuestoesDB/question_maker.cpp \
 		../QuestoesDB/database_impl.cpp \
-		../QuestoesDB/query_parser.cpp
+		../QuestoesDB/query_parser.cpp \
+		../QuestoesDB/statistic.cpp
 QMAKE_TARGET  = QuestoesDB
 DESTDIR       = 
 TARGET        = QuestoesDB
@@ -347,8 +351,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../sources.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../QuestoesDB/mainwin.h ../QuestoesDB/question_selector.h ../QuestoesDB/custom_logger.h ../QuestoesDB/maker_win.h ../QuestoesDB/question_maker.h ../QuestoesDB/database_impl.h ../QuestoesDB/query_parser.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../QuestoesDB/main.cpp ../QuestoesDB/mainwin.cpp ../QuestoesDB/question_selector.cpp ../QuestoesDB/custom_logger.cpp ../QuestoesDB/maker_win.cpp ../QuestoesDB/question_maker.cpp ../QuestoesDB/database_impl.cpp ../QuestoesDB/query_parser.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../QuestoesDB/mainwin.h ../QuestoesDB/question_selector.h ../QuestoesDB/custom_logger.h ../QuestoesDB/maker_win.h ../QuestoesDB/question_maker.h ../QuestoesDB/database_impl.h ../QuestoesDB/query_parser.h ../QuestoesDB/statistic.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../QuestoesDB/main.cpp ../QuestoesDB/mainwin.cpp ../QuestoesDB/question_selector.cpp ../QuestoesDB/custom_logger.cpp ../QuestoesDB/maker_win.cpp ../QuestoesDB/question_maker.cpp ../QuestoesDB/database_impl.cpp ../QuestoesDB/query_parser.cpp ../QuestoesDB/statistic.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../QuestoesDB/mainwin.ui ../QuestoesDB/maker_win.ui $(DISTDIR)/
 
 
@@ -484,6 +488,9 @@ database_impl.o: ../QuestoesDB/database_impl.cpp ../QuestoesDB/database_impl.h
 
 query_parser.o: ../QuestoesDB/query_parser.cpp ../QuestoesDB/query_parser.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o query_parser.o ../QuestoesDB/query_parser.cpp
+
+statistic.o: ../QuestoesDB/statistic.cpp ../QuestoesDB/statistic.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o statistic.o ../QuestoesDB/statistic.cpp
 
 qrc_sources.o: qrc_sources.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_sources.o qrc_sources.cpp

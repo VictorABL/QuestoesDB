@@ -14,6 +14,7 @@ MainWin::MainWin(QWidget *parent) :
     rightAnswer(nullptr)
 {
     interface->setupUi(this);
+//    Switch to UI initial page.
     interface->stackedWidget->setCurrentIndex(0);
     interface->question_text->setStyleSheet("background-color: light gray");
     interface->question_text->setStyleSheet("border: none");
@@ -61,6 +62,11 @@ void MainWin::on_ready_butto_clicked()
     interface->stackedWidget->setCurrentIndex(2);
 }
 
+//============================================================
+//************************************************************
+
+//Make answer`s check button available to click.
+
 void MainWin::on_alternative_a_clicked()
 {
     if(!interface->check_button->isEnabled()) interface->check_button->setEnabled(true);
@@ -89,8 +95,12 @@ void MainWin::on_alternative_d_clicked()
     if(!interface->check_button->isEnabled()) interface->check_button->setEnabled(true);
 }
 
+//************************************************************
+//============================================================
+
 void MainWin::on_check_button_clicked()
 {
+//    Answer`s check button function handler.
     qDebug() << "Answer`s check button clicked..";
     qDebug() << "Cleaning previous toggled answer background..";
     CleanBackground(previousToggled);
@@ -103,8 +113,10 @@ void MainWin::on_check_button_clicked()
 
 void MainWin::on_back_button_2_clicked()
 {
+//    Back button to return to theme`s page.
     qDebug() << "Page 3`s back button clicked..";
     qDebug() << "Page 2 selected..";
+//    Switch to theme`s page.
     interface->stackedWidget->setCurrentIndex(1);
     qDebug() << "Cleaning answer..";
     CleanAnswer();
@@ -119,6 +131,9 @@ void MainWin::on_back_button_2_clicked()
 }
 
 void MainWin::SetQuestion(const QString& query) {
+
+    //Function to setup up the choosed question, starting from picking up in database to drawing
+    //in proper UI fields. Used in DrawQuestion function.
 
     qDebug() << "Set question`s query to database..";
     database_impl->SetQuery(query);
@@ -137,7 +152,7 @@ void MainWin::SetQuestion(const QString& query) {
     qDebug() << "Question is ready - Theme:" << database_impl->GetQueryValue(8) << " Database ID:" << database_impl->GetQueryValue(0);
 }
 
-
+//Check buttons to select the themes of questions.
 void MainWin::on_math_check_stateChanged(int state)
 {
 
@@ -165,6 +180,11 @@ void MainWin::on_physic_check_stateChanged(int state)
     qDebug() << "Physics unselected..";
 
 }
+
+//=========================================================================
+//*************************************************************************
+
+//Pick theme funtions, adding or removing in the selector`s set.
 
 void MainWin::on_chemi_check_stateChanged(int state)
 {
@@ -265,6 +285,9 @@ void MainWin::on_port_check_stateChanged(int state)
 
 }
 
+//*************************************************************************
+//=========================================================================
+
 void MainWin::EmptySet() {
 
 //    Show a message box in case the selector`s set is empty.
@@ -273,17 +296,26 @@ void MainWin::EmptySet() {
 
 void MainWin::DrawQuestion() {
 
+//    Draws the question, using selector to generate the random query to the database
+//    and setting up in the SetQuestion function.
     auto query = selector->GenerateQueryString(database_impl);
     SetQuestion(query);
 
 }
 
+
 void MainWin::on_next_button_clicked()
 {
+
+//    Next button to pick another question.
+
     qDebug() << "Next button clicked..";
     qDebug() << "Hiding answer`s labels..";
+
+//    Hiding answer`s labels.
     interface->answer_tag->hide();
     interface->answer_label->hide();
+
     qDebug() << "Disabling check button..";
     interface->check_button->setEnabled(false);
     qDebug() << "Cleaning selected answer`s background..";
@@ -305,7 +337,11 @@ void MainWin::UncheckAnswer(auto& radio_button) {
     radio_button->setAutoExclusive(true);
 }
 
+//===================================================================
+//*******************************************************************
 
+//Alternative`s toggled functions, setting the selected(label) and toggled(radio button)
+//answer`s variables.
 
 void MainWin::on_alternative_a_toggled(bool checked)
 {
@@ -360,15 +396,25 @@ void MainWin::on_alternative_e_toggled(bool checked)
     }
 }
 
+//*******************************************************************
+//===================================================================
+
 void MainWin::CleanAnswer() {
 
+    //Clean toggled answer.
     if (selectedAnswer == nullptr) return;
     UncheckAnswer(toggledAnswer);
     qDebug() << "Toggled answer cleaned..";
 }
 
+//===================================================================
+//*******************************************************************
+
+//Help buttons manager functions.
+
 void MainWin::on_help2_button_clicked()
 {
+
     QMessageBox::information(this, "Ajuda", "É a sua primeira vez?\nSelecione os temas sobre os quais você deseja responder e clique em PRONTO para começar a responder as questões.\n\n\t\tBoa sorte :)");
     qDebug() << "Page 2 information`s button clicked..";
 }
@@ -379,8 +425,12 @@ void MainWin::on_help_button_clicked()
     qDebug() << "Page 1 information`s button clicked..";
 }
 
+//*******************************************************************
+//===================================================================
 
 void MainWin::CheckAnswer(const QString& answer) {
+
+    //Check if the answer is right, call comparing answers for each case.
 
     qDebug() << "Checking if selected answer is right..";
     switch (answer.at(0).toLatin1()) {
@@ -405,6 +455,8 @@ void MainWin::CheckAnswer(const QString& answer) {
         rightAnswer = interface->label_e;
         CompareAnswers();
         break;
+//    If no one answer is selected, it never reach this case, since check button
+//    is only available if an answer is selected.
     default:
         break;
     }
@@ -428,17 +480,21 @@ void MainWin::PaintRightAnswer(auto& widget) {
 
 void MainWin::CompareAnswers() {
 
+//    Comparing pointers.
     qDebug() << "Comparing answers..";
     if(rightAnswer == selectedAnswer) {
         PaintRightAnswer(rightAnswer);
         return;
     }
 
+//    if the answer is wrong.
     PaintRightAnswer(rightAnswer);
     PaintWrongAnswer(selectedAnswer);
 }
 
 void MainWin::CleanBackground(auto& widget) {
+
+    //Clean answer`s background.
 
     if(widget == nullptr) return;
 
@@ -453,8 +509,9 @@ void MainWin::SetPreviousToggled(auto& widget) {
     previousToggled = widget;
 }
 
-
 void MainWin::closeEvent(QCloseEvent *event) {
+
+    //Function to close the main window.
 
     qDebug() << "Closing application..";
 
@@ -464,6 +521,8 @@ void MainWin::closeEvent(QCloseEvent *event) {
 
 void MainWin::on_toolButton_clicked()
 {
+
+//    Message box to initiate the question maker mode.
     QString _question = "Deseja iniciar o modo criador de questões?";
     QMessageBox::StandardButton reply =  QMessageBox::question(this, "",_question,
                           QMessageBox::Yes | QMessageBox::No);
@@ -473,6 +532,7 @@ void MainWin::on_toolButton_clicked()
 
 void MainWin::MakerMode() {
 
+//    Shows the question`s maker mode, hiding the main window.
     this->hide();
     __maker_win = std::make_unique<qdb::MakerWin>();
     __maker_win->show();

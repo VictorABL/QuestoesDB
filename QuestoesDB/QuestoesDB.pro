@@ -34,7 +34,8 @@ SOURCES += \
     maker_win.cpp \
     question_maker.cpp \
     database_impl.cpp \
-    query_parser.cpp
+    query_parser.cpp \
+    statistic.cpp
 
 HEADERS += \
         mainwin.h \
@@ -43,7 +44,8 @@ HEADERS += \
     maker_win.h \
     question_maker.h \
     database_impl.h \
-    query_parser.h
+    query_parser.h \
+    statistic.h
 
 FORMS += \
         mainwin.ui \

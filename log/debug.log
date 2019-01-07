@@ -5,10 +5,18 @@ VERSION: 0.0.1
 
 AUTHOR: VICTOR
 
-INSTANCE TIME: 04/01/19 - 00:51
+INSTANCE TIME: 07/01/19 - 15:20
 
 *************************************
 -------------------------------------
 
-[DEBUG   ]: [ 04/01/19 | 00:51 ] | ACTION: Initiaziling main window..                                   | IN FILE:../QuestoesDB/mainwin.cpp
-[DEBUG   ]: [ 04/01/19 | 00:51 ] | ACTION: Closing application..                                        | IN FILE:../QuestoesDB/mainwin.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Initiaziling main window..                                   | IN FILE:../QuestoesDB/mainwin.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Initializing question`s maker mode..                         | IN FILE:../QuestoesDB/maker_win.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Initializing database`s connection..                         | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Setting up database..                                        | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Database connected..                                         | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Query connecting to the database..                           | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Query and database connection configured..                   | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Setting up initial html`s texts into fields..                | IN FILE:../QuestoesDB/maker_win.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Ending database connection..                                 | IN FILE:../QuestoesDB/database_impl.cpp
+[DEBUG   ]: [ 07/01/19 | 15:20 ] | ACTION: Closing question`s maker application..                       | IN FILE:../QuestoesDB/maker_win.cpp

@@ -93,11 +93,18 @@ private:
 
     std::unique_ptr<qdb::MakerWin> __maker_win;
 
+
 //    Interface member`s pointers:
     QRadioButton* toggledAnswer;
     QLabel* previousToggled;
     QLabel* selectedAnswer;
     QLabel* rightAnswer;
+
+//toggledAnswer is needed to swap the radio buttons and to uncheck the selected answer.
+//selectedAnswer is needed to compare with the right answer and to draw to borders, indicating
+//if the user has chosen correctly.
+
+
 };
 
 #endif
