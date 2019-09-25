@@ -9,6 +9,6 @@ It has a portuguese interface, though the entire code is written in english.
 The program has the object to help both students and teachers, so they can have a collection of questions to study and
 prepare for the exam.
 
-Its doesn`t have any monetary goals, and everyone its allowed to download its source code, to maintain or to help with 
+Its doesn't have any monetary goals, and everyone its allowed to download its source code, to maintain or to help with 
 improvements.
 </body>
